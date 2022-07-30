@@ -1,56 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/bottom_container"
-    android:layout_width="match_parent"
+    android:layout_width="300dp"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="50dp"
+    android:id="@+id/bottom_sheet"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bottomsheet_bg"
+    app:layout_behavior="@string/bottom_sheet_behavior">
 
-
-    <TextView
-        android:id="@+id/apple_txt"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_bottom"
         android:layout_marginTop="20dp"
-        android:padding="5dp"
-        android:text="apple"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
+        android:padding="10dp"/>
 
-    <TextView
-        android:id="@+id/orange_txt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        android:text="orange"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/apple_txt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="apple"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15sp" />-->
 
-    <TextView
-        android:id="@+id/banana_txt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        android:text="banana"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/orange_txt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="orange"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15sp" />-->
 
-    <TextView
-        android:id="@+id/strawberry_txt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        android:text="strawberry"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/banana_txt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="banana"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/strawberry_txt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="strawberry"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15sp" />-->
 
 
 </LinearLayout>

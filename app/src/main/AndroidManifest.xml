@@ -13,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bottomsheet"
         tools:targetApi="31">
+
         <activity
-            android:name=".bottom"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
