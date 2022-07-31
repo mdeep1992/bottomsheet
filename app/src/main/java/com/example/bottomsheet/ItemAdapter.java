@@ -40,7 +40,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Viewholder> {
 
     public interface Itemlistener {
 
-         void onClick(List<String> list);
+         void onFruitClick(String fruit);
     }
 
 
@@ -55,9 +55,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Viewholder> {
             textView = itemView.findViewById(R.id.text_view);
         }
 
-        public void setData(Object o) {
-            this.item = item;
-            textView.setText(item);
+        public void setData(String fruit) {
+
+            textView.setText(fruit);
 
         }
 
@@ -65,7 +65,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Viewholder> {
         @Override
         public void onClick(View view) {
 
-            Log.i("Data>>" , "ok");
+            mListener.onFruitClick(mItems.get(getAdapterPosition()));
         }
     }
 }

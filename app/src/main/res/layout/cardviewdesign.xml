@@ -118,8 +118,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="130dp"
                 android:backgroundTint="#57AEF7"
-                app:cardCornerRadius="20dp"
-                >
+                app:cardCornerRadius="20dp">
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -185,6 +184,7 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
+                android:padding="10dp"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/menuicon" />
 
@@ -192,6 +192,7 @@
                 android:layout_width="70dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:padding="10dp"
                 android:backgroundTint="#E8F4390B"
                 app:fabCustomSize="70dp"
                 app:tint="@color/white"
@@ -201,6 +202,7 @@
                 android:layout_width="70dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
+                android:padding="10dp"
                 android:layout_marginEnd="10dp"
                 android:src="@drawable/image" />
         </androidx.cardview.widget.CardView>

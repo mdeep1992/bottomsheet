@@ -73,7 +73,8 @@ behavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
 
 
     @Override
-    public void onClick(List<String> list) {
-
+    public void onFruitClick(String fruit) {
+textView.setText(fruit);
+        behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
     }
 }
